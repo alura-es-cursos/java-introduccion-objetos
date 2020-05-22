@@ -4,12 +4,13 @@ public class TestMetodos {
 
     public static void main (String[] args) {
         Cuenta cuentaDeDiego = new Cuenta();
-        cuentaDeDiego.saldo = 100;
+        // cuentaDeDiego.saldo = 100;
+        cuentaDeDiego.deposita(100);
         cuentaDeDiego.deposita(50);
-        System.out.println(cuentaDeDiego.saldo);
+        System.out.println(cuentaDeDiego.getSaldo());
 
         boolean consigioRetirar = cuentaDeDiego.saca(20);
-        System.out.println(cuentaDeDiego.saldo);
+        System.out.println(cuentaDeDiego.getSaldo());
         System.out.println(consigioRetirar);
 
         Cuenta cuentaDeJimena = new Cuenta();

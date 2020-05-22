@@ -11,8 +11,9 @@ public class TestCuentaConCliente {
         Cuenta cuentaDeDiego = new Cuenta();
         cuentaDeDiego.deposita(100);
 
-        cuentaDeDiego.titular = diego;
-        System.out.println(cuentaDeDiego.titular.nombre);
+        // cuentaDeDiego.titular = diego;
+        cuentaDeDiego.setTitular(diego);
+        System.out.println(cuentaDeDiego.getTitular().getNombre());
     }
     
 }
